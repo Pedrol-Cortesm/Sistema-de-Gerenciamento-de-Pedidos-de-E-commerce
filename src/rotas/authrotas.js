@@ -1,8 +1,8 @@
 const express = require('express');
-const authController = require('../controladores/authController');
+const authControladores = require('../controladores/authControladores');
 
 const rotas = express.Router();
 
-rotas.post('/login', authController.login);
+rotas.post('/login', authControladores.login);
 
 module.exports = rotas;

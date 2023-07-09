@@ -1,7 +1,7 @@
 const express = require('express');
-const authRoutes = require('./rotas/authrotas');
-const productRoutes = require('./rotas/productRoutes');
-const orderRoutes = require('./rotas/orderRoutes');
+const authRotas = require('./rotas/authRotas');
+const produtoRotas = require('./rotas/produtoRotas');
+const orderRotas = require('./rotas/orderRotas');
 const { connectDatabase } = require('./config/database');
 const { errorHandler } = require('./middleware/errorHandler');
 const path = require('path');
@@ -16,9 +16,9 @@ connectDatabase();
 app.use(express.json());
 
 // Rotas
-app.use('/auth', authRoutes);
-app.use('/products', productRoutes);
-app.use('/orders', orderRoutes);
+app.use('/auth', authRotas);
+app.use('/produtos', produtoRotas);
+app.use('/orders', orderRotas);
 
 // Middleware para tratamento de erros
 app.use(errorHandler);
