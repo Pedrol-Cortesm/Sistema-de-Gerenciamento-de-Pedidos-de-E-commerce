@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de Gerenciamento de Pedidos de E-commerce</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Sistema de Gerenciamento de Pedidos de E-commerce</h1>
+    <form id="product-form">
+      <input type="text" id="product-name" placeholder="Nome do Produto" required>
+      <input type="text" id="product-description" placeholder="Descrição do Produto" required>
+      <input type="number" id="product-price" placeholder="Preço do Produto" required>
+      <input type="number" id="product-quantity" placeholder="Quantidade em Estoque" required>
+      <button type="submit">Cadastrar Produto</button>
+    </form>
+    <div class="products-container" id="products-container"></div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
